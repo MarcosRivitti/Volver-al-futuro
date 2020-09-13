@@ -1,0 +1,10 @@
+import example.*
+test "marty viaja  de sanMartin a gesell al 1969,¿cuantos años tiene ahora? " {
+	deLorean.viajar(sanMartin,gesell,1969)
+	assert.equals(marty.edad(),30)
+
+}
+test "marty viaja de sanMartin a gesell, ¿Esta en gesell?"{
+	deLorean.viajar(sanMartin,gesell,1969)
+	assert.that(gesell.habitantes().contains(marty))
+}
